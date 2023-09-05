@@ -6,9 +6,17 @@ body {
     /* Additional background properties can be added here */
 }
 .jumbotron {
+    text-align: center; /* Center-align text */
+    display: flex; /* Use flexbox to center vertically and horizontally */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     color: white;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #000;
     border-radius: .3rem;
+    margin-top: 6%;
+    margin-right: 25%;
+    margin-left: 25%;
 }
