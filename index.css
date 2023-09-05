@@ -1,0 +1,14 @@
+body {
+    background-image: url('./images/pinkrain.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional - makes the background fixed */
+    /* Additional background properties can be added here */
+}
+.jumbotron {
+    color: white;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #000;
+    border-radius: .3rem;
+}
