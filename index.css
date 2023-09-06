@@ -1,3 +1,23 @@
+@media screen and (min-width: 796px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+    .h1, h1 {
+        font-size: 1.5rem;
+    }
+  }
+@media screen and (min-width: 1024px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+    .container {
+        font-size: 1rem;
+        margin: 0px;
+        max-width: 100%;
+    }
+    .h1, h1 {
+        font-size: 1.7rem;
+    }
+  }
+
 body {
     background-image: url('./images/pinkrain.jpg');
     background-size: cover; /* Adjust as needed */
