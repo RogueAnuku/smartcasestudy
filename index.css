@@ -1,10 +1,22 @@
+
 @media screen and (min-width: 796px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
     .h1, h1 {
-        font-size: 1.5rem;
-    }
-  }
+        font-size: 1.5rem;}
+        .row {
+            padding-top: 2%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+           width: 80%;
+        }
+   
+  
+  
+}
+
 @media screen and (min-width: 1024px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
@@ -14,9 +26,38 @@
         max-width: 100%;
     }
     .h1, h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
+
   }
+  @media screen and (min-width: 1080px) {
+    .container {font-size: 1.5rem;        
+  }
+  .h1,h1 {
+    font-size: 2rem;
+  }
+  .card {
+    width: 50%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    background-color: transparent;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    /* background-color: #fff; */
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    align-content: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+  }
+}
 
 body {
     background-image: url('./images/pinkrain.jpg');
@@ -36,7 +77,16 @@ body {
     margin-bottom: 2rem;
     background-color: #000;
     border-radius: .3rem;
-    margin-top: 6%;
+    margin-top: 3%;
     margin-right: 25%;
     margin-left: 25%;
+}
+.h2, h2 {
+    color: #F23580;
+}
+.col-6.col-md-4 {
+    padding-top: 2%;
+}
+.col-sm-6.col-md-8 {
+    padding-top: 2%;
 }
