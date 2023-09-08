@@ -17,6 +17,9 @@
     border-radius: .25rem;
     align-content: center;
 }
+.card-body{
+    font-size: 1rem;
+}
 .btn-primary {
     color: #fff;
     background-color: #F23580;
@@ -82,13 +85,9 @@
     width: 100%;
 }
 .row.no-gutters {
-    
-        display: -ms-flexbox;
-        display: flex;
-     
-        margin-right: -15px;
-        margin-left: -15px;
-    }
+     display: -ms-flexbox;
+    display: flex;
+          
 }
   }
 
