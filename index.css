@@ -1,4 +1,15 @@
-.h3, h3 {
+
+.navbar {
+    background-color: #000; /* Change the background color to a dark color */
+}
+
+.navbar-nav .nav-link {
+    color: #F23580; /* Change the text color to a contrasting color */
+}
+
+.navbar-toggler-icon {
+    background-color: #F23580; /* Change the color of the hamburger icon */
+}.h3, h3 {
     color: aqua; text-align: left;
 }
 .card {
@@ -17,8 +28,12 @@
     border-radius: .25rem;
     align-content: center;
 }
+
 .card-body{
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.p {
+    margin: 2%;
 }
 .btn-primary {
     color: #fff;
@@ -26,6 +41,48 @@
     /* border-color: #007bff; */
     justify-content: center;
 }
+.image-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #F23580; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Add rounded corners to the scrollbar thumb */
+}
+
+/* Customize the scrollbar for Firefox and other browsers that support scrollbar-width */
+.image-container {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: transparent; /* Set the color of the scrollbar thumb and track */
+}
+
+.image-container {
+    background: transparent;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+
+
+.image-container::-webkit-scrollbar {
+    width: 15px; /* Set the width of the scrollbar */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #F23580; /* Set the color of the thumb (the draggable part of the scrollbar) */
+    border-radius: 5px; /* Set the border radius of the thumb */
+}
+
+.image-container::-webkit-scrollbar-track {
+    background-color: #000; /* Set the color of the track (the non-draggable part of the scrollbar) */
+}
+
+
+
+
+
+
 @media screen and (min-width: 796px) {
     #leftsidebar {width: 200px; float: left;}
     #main {margin-left: 216px;}
@@ -42,7 +99,7 @@
           
         }
   .col-md-6 {
-    max-width: 50%;
+    max-width: 80%;
   }
    .col-md-8 {
     -ms-flex: 0 0 45.666667%;
@@ -55,13 +112,28 @@
 
 @media screen and (min-width: 1024px) {
     #leftsidebar {width: 200px; float: left;}
-    #main {margin-left: 216px;}
+    #main {;}
     .container {
         font-size: 1rem;
         margin: 0px;
-        max-width: 100%;}
+        max-width: 80%;
+    margin-left: 10%;
+    margin-right:10%;}
       
-   
+        .image-container {
+            overflow-x: auto;
+            white-space: nowrap;
+         
+            margin: 0 auto; /* Center the container horizontally */
+        }
+        
+        .styled-image {
+            margin-right: 10px; /* Adjust this margin to control the spacing between images */
+            vertical-align: middle; /* Align images vertically in the container */
+        }
+        .h1, h1 {
+            font-size: 1.5rem;
+        }
     .h3, h3 {
        font-size: 1rem;
     }
@@ -115,6 +187,7 @@ body {
     margin-right: 10%;
     margin-left: 10%;
     width: 80%;
+  
     text-align: center; /* Center-align text */
     display: flex; /* Use flexbox to center vertically and horizontally */
     flex-direction: column; /* Stack items vertically */
@@ -132,7 +205,8 @@ body {
 .h2, h2 {
     color: #F23580;
     margin-top: 4%;
-    font-size: 1rem;
+    font-size: 2rem;
+    padding: 2%;
 }
 .col-6.col-md-4 {
     padding-top: 2%;
