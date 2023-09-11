@@ -1,4 +1,13 @@
 
+@media screen and (min-width){
+
+}.container, .container-md, .container-sm {
+    max-width: 90%;
+}
+
+
+
+
 .navbar {
     background-color: #000; /* Change the background color to a dark color */
 }
@@ -9,11 +18,14 @@
 
 .navbar-toggler-icon {
     background-color: #F23580; /* Change the color of the hamburger icon */
-}.h3, h3 {
+}
+
+
+.h3, h3 {
     color: aqua; text-align: left;
 }
-.card {
-    width: 80%;
+.card { border-radius: 25px;
+ 
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -23,21 +35,27 @@
     min-width: 0;
     word-wrap: break-word;
     /* background-color: #fff; */
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+      
     border-radius: .25rem;
     align-content: center;
 }
-
+.card-header {border-radius: 25px;}
 .card-body{
     font-size: 1.2rem;
     border-radius: 25px;
 }
+ .card.text-center {
+   
+        /* box-shadow: -1px 1px 14px 0px #00BFF0; */
+        border-radius: 25px;
+    }
+ 
 .p {
     margin: 2%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.2rem ;
+    color: #FFF;
   
 }
 .btn-primary {
@@ -98,8 +116,6 @@
 }
 
 
-
-
 .image-container::-webkit-scrollbar {
     width: 10px; /* Set the width of the scrollbar */
 }
@@ -134,25 +150,31 @@
           
         }
   .col-md-6 {
-    max-width: 80%;
+    max-width: 40%;S
   }
    .col-md-8 {
     -ms-flex: 0 0 45.666667%;
     flex: 0 0 66.666667%;
-    max-width: 50%;
+    max-width: 60%;
    
 }
 }
 
-
+.container, .container-lg, .container-md, .container-sm {
+    /* max-width: 960px; */
+}
 @media screen and (min-width: 1024px) {
     #leftsidebar {width: 200px; float: left;}
     #main {;}
-    .container {
-        font-size: 1rem;
-        margin: 0px;       
-  }
+    .card-img, .card-img-bottom, .card-img-top {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
       
+    }
+    .navbar-nav {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
         .image-container {
             overflow-x: auto;
             white-space: nowrap;
@@ -160,10 +182,7 @@
             margin: 0 auto; /* Center the container horizontally */
         }
         
-        .styled-image {
-            margin-right: 10px; /* Adjust this margin to control the spacing between images */
-            vertical-align: middle; /* Align images vertically in the container */
-        }
+     
         .h1, h1 {
             font-size: 1.5rem;
         }
@@ -187,9 +206,13 @@
     color: #FFF; font-size: 
     1.2rem;
 }
+.card.text-center{ box-shadow: 
+-1px 1px 14px 0px #00BFF0;}
 .card.mb-3{
     width: 100%;
+  
 }
+
 .row.no-gutters {
      display: -ms-flexbox;
     display: flex;
@@ -201,8 +224,16 @@
   }
 
   @media screen and (min-width: 1080px) {
-  
-
+    .navbar-nav {
+        margin-right: 20%;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
   
 .grid-container {
     display: grid;
@@ -254,6 +285,7 @@ body {
 .col-sm-6.col-md-8 {
     padding-top: 2%;
     padding-bottom: 2%;
+    font-size: 1.2rem;
    
     
 }
