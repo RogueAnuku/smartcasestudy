@@ -31,9 +31,14 @@
 
 .card-body{
     font-size: 1.2rem;
+    border-radius: 25px;
 }
 .p {
     margin: 2%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem ;
+  
 }
 .btn-primary {
     color: #fff;
@@ -41,6 +46,35 @@
     /* border-color: #007bff; */
     justify-content: center;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5%;
+  }
+  
+  .button {
+  
+    background-color: #f23580;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 15.5px 24px 15.5px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .button:hover {
+    background-color:#00bff0;
+  }
 .image-container::-webkit-scrollbar {
     width: 10px; /* Set the width of the scrollbar */
 }
@@ -52,8 +86,9 @@
 
 /* Customize the scrollbar for Firefox and other browsers that support scrollbar-width */
 .image-container {
-    scrollbar-width: thin; /* Set the width of the scrollbar */
-    scrollbar-color: transparent; /* Set the color of the scrollbar thumb and track */
+    scrollbar-width: 20px; /* Set the width of the scrollbar */
+    scrollbar-color: transparent;
+     /* Set the color of the scrollbar thumb and track */
 }
 
 .image-container {
@@ -66,7 +101,7 @@
 
 
 .image-container::-webkit-scrollbar {
-    width: 15px; /* Set the width of the scrollbar */
+    width: 10px; /* Set the width of the scrollbar */
 }
 
 .image-container::-webkit-scrollbar-thumb {
@@ -115,10 +150,8 @@
     #main {;}
     .container {
         font-size: 1rem;
-        margin: 0px;
-        max-width: 80%;
-    margin-left: 10%;
-    margin-right:10%;}
+        margin: 0px;       
+  }
       
         .image-container {
             overflow-x: auto;
@@ -147,11 +180,12 @@
         border-radius: 20px;
     }
     .col-sm-6.col-md-8.order-md-2 {
-        font-size: .75rem;
+        font-size: 1.2rem;
     }
 .card-text {
 
-    color: #FFF;
+    color: #FFF; font-size: 
+    1.2rem;
 }
 .card.mb-3{
     width: 100%;
@@ -161,6 +195,9 @@
     display: flex;
           
 }
+  }
+  .footer {
+    background-color: #2A7288;;
   }
 
   @media screen and (min-width: 1080px) {
@@ -207,6 +244,7 @@ body {
     margin-top: 4%;
     font-size: 2rem;
     padding: 2%;
+   text-align: center;
 }
 .col-6.col-md-4 {
     padding-top: 2%;
