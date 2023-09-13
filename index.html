@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black!important; justify-content: flex-end;">
-        <div class="container-fluid" style="margin: 0px; max-width: 100%;">
+    <style> .hovered {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black!important; justify-content: flex-end; box-shadow: -1px 1px 14px 0px #00BFF0">
+        <div class="container-fluid" style="margin: 0px; max-width: 100%; ">
             <a class="navbar-brand" href="#">
             <img src="./images/Logo.gif" width="70px" alt="Logo">
             </a>
@@ -54,11 +60,14 @@
     </div>
 
     <div class="container" style="background-color: transparent;">
-        <div class="card mb-3 mx-auto" > <!-- Add mx-auto to center the card horizontally -->
-            <img src="./images/homecode.png" class="card-img-top" alt="..." ></div>
-            <div class="card-body; " style="border-radius: 25px;">
+        <div class="card mb-3 mx-auto">
+            <img src="./images/homecode.png" class="card-img-top" alt="...">
+            <div class="card-body" style="border-radius: 25px;">
+            </div>
         </div>
     </div>
+
+
 
     <div class="container" style="background-color: transparent;">
         <div class="row">   
@@ -84,106 +93,41 @@
             
         </div>  
     </div>
-    
-
     <div class="container" style="background-color: transparent;">
         <div class="row">   
-            <div class= card mb-3 style="box-shadow: -1px 1px 14px 0px #00BFF0; border-radius: 25px;">
-                <div class="card-header" style="background-color:  #000; margin-bottom: -2%; border-radius: 25px;">
-                 <h2>User Research</h2> 
-           
-                <div class="card-body" style="background-color: #000; text-align: left; font-size: 1rem; color: #FFF;">
-                <h3> The Plan</h3>
-                <p class="card-text" style="color: #FFF;">Determine: "What are the needs, preferences, and challenges users face about recipe discovery and meal planning?"</p>
-                 <p style="color: white;">Set up online surveys and engage in semi-structured interviews to achieve a balance between qualitative and quantitative research. Zoom will be used for the interviews, and Google Form will be used for the survey.</p>
-                </p>
+            <div class="col-6 col-md-4 order-md-3 align-items-center" style="order: 1; background-color: #000; color: #FFF; text-align: center; font-size: .78rem; margin-right: 0;">
+                <img src="./images/admin.png" style="background-color: #FFF; border-radius:10px; width: 100%;">
+                <img src="./images/Piechart.png" style="background-color: #FFF; border-radius: 100%; width: 40%;">
+                <img src="./images/userpersona.png" style="width: 100%; background-color: #FFF;">
             </div>
-          
-            <div class="card-body" style="background-color: #000; text-align: left; font-size: 1rem;">
-                <div class="card mb-3" >
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                         <img src="./images/Anika2 (1).png" style="width: 100%; background-color: #FFF; 
-                         ">
-                     </div>
-                     
-                        <div class="col-md-8">
-                            <div class="card-body" style="padding: 4%;">
-                                 <h3 class="card-title">Participant Interviews</h3>
-                                 <p class="card-text">Five remote interviews were conducted throughout April 2023. Seventeen qualitative interview questions were targeted to provide insight into our research questions. The duration was approximately half an hour. Participants  consented to being recorded for research purposes. To view recordings transcripts, click here. 
+    
+            <div class="col-sm-6 col-md-8 order-md-4" style="background-color: black; color: white; text-align: center; font-style: normal;">
+                <h2 class="card-title">User Research</h2>
+                                 <p class="card-text">
+                                 <h3>The Plan</h3>
+                                 <p> Determine: "What are the needs, preferences, and challenges users face about recipe discovery and meal planning?"
+                                    Set up online surveys and engage in semi-structured interviews to achieve a balance between qualitative and quantitative research. Zoom will be used for the interviews, and Google Form will be used for the survey.
                                 </p>
-
-                               
-                            </div>   
-                        </div>                    
-                    </div>   
-                </div>                 
+                                <h3 class="card-title">Participant Interviews</h3>
+                                <p class="card-text">Five remote interviews were conducted throughout April 2023. Seventeen qualitative interview questions were targeted to provide insight into our research questions. The duration was approximately half an hour. Participants consented to being recorded for research purposes. To view recordings transcripts, click here.</p>
+                                
+                                <h3 class="card-title">Affinity Diagram Technique</h3>
+                                <p class="card-text">We plotted out all our collective data from the user interviews and online survey results.
+                                    66.7% of users experience pain points related to the length of time healthy meal preparation takes and cited that as a reason meal planning does not occur.
+                                    33.3% of users struggled with finding healthy meal options for their unique dietary restrictions.</p>
+                                <h3 class="card-title">Proto-Persona</h3>
+                                
+                                <p class="card-text">Meet Richard Robinson, our user persona, who was created based on the data from the affinity diagram and empathy map. Richard is a 30-year-old financial advisor (workaholic) from Toronto, Ontario, Canada. He's currently single and working long hours at the office. He takes his job seriously to the point where his healthy food choices have taken a back seat. He hopes to improve his knowledge about food, nutrition, and cooking techniques.</p>
+                            lead to repetitive and less healthy meal choices which negatively impact their overall</p>
             </div>
-                
-          
-       
-
-            <div class="card-body" style="background-color: #000; text-align: left; font-size: 1rem;">
-                <div class="card mb-3" style="width: 110%;" >
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                         <img src="./images/Piechart.png" style="width: 100%; background-color: #FFF; border-radius: 100%;">
-                     </div>
-                         <div class="col-md-8">
-                            <div class="card-body" style="padding: 4%;">
-                                 <h3 class="card-title">Affinity Diagram Tecnique</h3>
-                                    <p style="color: white;"> We plotted out all our collective data from the user interviews and online survey results. 
-
-                                66.7% of users experience pain points related to the length of time healthy meal preparation takes and sited that as a reason meal planning does not occur. 
-                                             
-                                 33.3% of users struggled with finding healthy meal options for their unique dietary restrictions. .  </p>
-                            </div>   
-                        </div>                    
-                                     
-            </div>
-        </div>       
-
+    
             
-            <div class="card-body" style="background-color: #000; text-align: left; font-size: 1rem;">
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-6 d-flex align-items-center">
-                            <img src="./images/userpersona.png" style="width: 100%; background-color: #FFF;">
-                        </div>
-                            <div class="col-md-6">
-                             <div class="card-body" style="padding: 4%;">
-                                    <h3 class="card-title">Proto Persona </h3>
-                                     <p style="color: white;" class="card-text">
-                                    Meet Richard Robinson, our user persona, who was created based on the data from the affinity diagram and empathy map.
-                                    
-                                 Richard is a 30 year old financial advisor (workaholic) from Toronto, Ontario,  Canada. He’s currently single and working long hours at the office. He takes his job seriously to the point where his healthy food choices have taken a back seat. 
-
-                                 He hopes to improve his knowledge about food, nutrition and cooking techniques. 
-
-                                 He wants to find new recipes to impress his friends and family with. 
-
-                                 He’d like to maintain a healthy lifestyle despite his busy work schedule. 
-
-                                 A bonus would be if he could save money by utilizing the ingrediency in his pantry. He often finds that he doesn’t know what to do with what’s in his cupboards before the items expire and is wasted.  
-
-                                    Some of his Pain-points include: 
-                                    -How-To videos are often far-too-long. 
-                                     -He’s always missing one or two things that he needs.
-                                    -Meal preparation is time consuming and he has a busy schedule.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </div> 
-        </div>          
+        </div>  
     </div>
-    </div>
-              
-                               
+                                 
     <div class="container-fluid">
         <div class="card-body" style="background-color: #000; text-align: left; font-size: 1rem; margin-top: 5%; box-shadow: -1px 1px 14px 0px #00BFF0; border-radius: 25px;">
-                <div class="card mb-3" >
+                <div class="card mb-5" >
                     <h2 class="card-title">Define and Ideate </h2>
                         <div class="card-body">
                             <p class="card-text">
@@ -316,7 +260,15 @@
         </div>
     </footer>
 
-   
+   <script>
+    function zoomIn(element) {
+     element.classList.add('hovered');
+        }
+
+    function zoomOut(element) {
+    element.classList.remove('hovered');
+    }
+   </script>
    
 </body>
 </html>
