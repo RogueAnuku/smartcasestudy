@@ -36,7 +36,7 @@ body {
 
 
 .h3, h3 {
-    color: #00BFF0; text-align: left;
+   color: #00BFF0; text-align: left;
 }
  img.card-img-top{
     border-radius: 10px;
@@ -182,23 +182,25 @@ body {
    
     .row {
         justify-content: center;
-         width: 90%;   
-        display: -ms-flexbox;
+               display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         border-radius: 25px;
         margin-bottom: 5%;
        
-            margin-right: -15px;
-            margin-left: 46px;
         }
        
        .h1, h1 {
         font-size: 1.5rem;
     }
         .container, .container-md, .container-sm {
-            max-width: 90%;
+            max-width: 100%;
+        }
+        .column-content img {
+            width: 53%;
+            margin-left: -6%;
+            border-radius: 25px;
         }
         .card-text {
             font-size: 1rem;
@@ -224,9 +226,11 @@ body {
             }
             .col-md-auto {
                 -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+                flex: 1;
                 width: auto;
                 max-width: 53%;
+                margin-left: 49%;
+                margin-top: -51%;
             }
           .col-6.col-md-4 {
             padding-top: 2%;
@@ -273,7 +277,7 @@ body {
     .col-md-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
-        max-width: 41.666667%;
+      
     }
     
     .col-md-7 {
@@ -281,9 +285,6 @@ body {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
-    These CSS adjustments set the widths of the columns appropriately so that the image is on the left and the text is on the right within the columns.
-    
-    By making these changes, your images should be on the left side of the columns, and the text should be on the right as desired. Adjust the column widths further if needed to achieve your desired layout.
     
     
     
@@ -292,7 +293,7 @@ body {
     
 .container, .container-lg, .container-md, .container-sm {
     border-radius: 25px; 
-    max-width: 85%;
+    max-width: 100%;
 
 }
 .col-sm-6.col-sm-6.col-md-8.order-md-2 {
@@ -309,6 +310,15 @@ body {
         width: 500px;
 }
 .h3,h3 {margin-left: 80;}
+.column-content img {
+   
+        width: 50%;
+        margin-left: -2%;
+   
+}
+.col-lg-2 {
+    margin-top: 5%;
+}
 }
 @media screen and (min-width: 1024px) {
     #leftsidebar {width: 200px; float: left;}
@@ -346,13 +356,18 @@ body {
             margin: 0 auto; /* Center the container horizontally */
         }
         .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-            width: 90%;
+            width: 100%;
             margin-right: auto;
             margin-left: auto;
         }
         .column-content {
             width: 100%;}
-           
+            .card-body {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                min-height: 1px;
+                padding: .9rem;
+            }   
             
         
             .column-content img {
@@ -379,7 +394,13 @@ body {
             flex: 0 0 auto;
             width: auto;
             margin-left: 5%;
-            max-width: 56%;
+            max-width: 41%;
+        }
+        .col-lg-2 {
+            -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+            max-width: 35.666667%;
+            margin-left: 1%;
         }
        
     .p {
@@ -416,9 +437,9 @@ body {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             margin-left: 4%;
-            width: 95%;
-            border-radius: 25px;
+                       border-radius: 25px;
             padding: 4%;
+            
             
            
         }
@@ -434,13 +455,15 @@ body {
         border-radius: 20px;
     }
     .card-title {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
+        margin-top: -2%;
+        margin-left: -7%;
     }
    
     .card-text {
     color: #FFF; font-size: 
     1rem;
-    margin-left: -8%;
+   
 }
 .card.text-center{ box-shadow: 
 -1px 1px 14px 0px #00BFF0;}
@@ -474,18 +497,8 @@ body {
         text-align: left;    
 
   }
-  .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-  .col-lg-2 {
-           -ms-flex: 0 0 16.666667%;
-        flex: 0 0 16.666667%;
-        max-width: 35.666667%;
-        margin-left: 3%;
-    }
+  
+    
     .column-content p {
         font-size: 1rem;
         line-height: 1.5;
