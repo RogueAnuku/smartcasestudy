@@ -188,20 +188,22 @@ body {
    
     .row {
         justify-content: center;
-            
+         width: 100%;   
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 2%;
         border-radius: 25px;
+        margin-bottom: 5%;
        } 
-
+       .h1, h1 {
+        font-size: 1.5rem;
+    }
         .container, .container-md, .container-sm {
-            max-width: 807px;
+            max-width: 90%;
         }
           
-        }
+        
         .card {
 
         }
@@ -231,10 +233,12 @@ body {
             margin-right: 11%;
             margin-left: 2%;
         }
-   .col-md-8 {
-    -ms-flex: 0 0 45.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 40%;} 
+        .col-md-8 {
+            -ms-flex: 0 0 45.666667%;
+            flex: 0 0 66.666667%;
+            max-width: 60%;
+        }
+  
     .col-md-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
@@ -257,6 +261,17 @@ body {
 .container, .container-lg, .container-md, .container-sm {
     border-radius: 25px;
 }
+.col-sm-6.col-sm-6.col-md-8.order-md-2 {
+    
+        margin-left: 4%;
+        background-color: black;
+        box-shadow: -1px 1px 14px 0px #00BFF0;
+        color: white;
+        text-align: center;
+        font-style: normal;
+        border-radius: 20px;
+    }
+}
 @media screen and (min-width: 1024px) {
     #leftsidebar {width: 200px; float: left;}
     #main {;}
@@ -265,9 +280,26 @@ body {
         flex-shrink: 0;
       
     }
+    .jumbotron {
+        height: 417px;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #000;
+        border-radius: .3rem;
+        margin-top: 3%;
+    }
     .navbar-nav {
-        margin-right: 10px;
-        font-size: 1.2rem;
+      
+        font-size: .9rem;
     }
         .image-container {
             overflow-x: auto;
@@ -275,16 +307,43 @@ body {
          
             margin: 0 auto; /* Center the container horizontally */
         }
+        
+       . h2, h2 {
+        color: #F23580;
+        margin-top: 4%;
+        font-size: 1.6rem;
+        padding: 2%;
+        text-align: center;
+    }
+
+       }
+        
+        
         .col-md-8 {
             -ms-flex: 0 0 66.666667%;
             flex: 0 0 66.666667%;
-            max-width: 46.666667%;
+            max-width: 54.666667%;
+            margin-left: 2%;
         }
     
     
         
-    
+        .col-md-5 {
+            -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+            max-width: 36.666667%;
+        }
 
+     
+        .row {
+           
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-left: 4%;
+           
+        }
      
         .h1, h1 {
             font-size: 1.5rem;
@@ -329,6 +388,9 @@ body {
   
   .card-title {
     margin-top: 86px;
+  }
+  .col-6.col-md-5.col-6-md-4-order-md-1.align-items-center {
+
   }
 
 }
