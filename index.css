@@ -868,4 +868,24 @@ body {
     margin-left: 54%;
     color: #00BFF0; font-size: 2.4rem;
 }
+.container-fluid footer img {
+    margin-left: 37%;
+    justify-content: center;
+    width: 25%;
+    margin-top: -133px;
+}
+
+#footer-nav {
+    font-size: 1.3rem;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: -176px;
+}
+.footer {
+  
+        font-size: 1.3rem;
+        /* width: 100%; */
+   
+}
   }
