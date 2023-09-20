@@ -1,5 +1,9 @@
 
 body {
+    background-image: url('./images/pinkrain.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     margin: 0;
     /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
     font-size: 1rem;
@@ -10,46 +14,46 @@ body {
     background-color: #fff;
 }
 
-
-
-.footer {
-    background-color: #2A7288;
-    width: 100%; /* Set the width to 100% */
-    padding: 20px; /* Add padding as needed */
-    color: white;
-    text-align: center;
-  }
-  
-  .footer h5 {
-    margin: 0; /* Remove default margin for the heading */
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer ul li {
-   text-align: left;
-    margin-right: 20px; /* Adjust spacing between list items */
-  }
-  
-  .footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline; /* Add underline on hover if desired */
-  }
+.container-fluid footer{
+    position:absolute;
+}
+.col-md-6-footer {
+    text-align: left;
+   
+}
+.container-fluid footer {
+   
+    padding: 1rem;
+    background-color: black;
+    box-shadow: -1px 1px 14px 0px #00BFF0;
+}
+.container-fluid footer img {
+    margin-left: 37%;
+    justify-content: center;
+    width: 25%;
+    margin-top: -63px;
+}
+.container-fluid footer p {
+    text-align: right;
+    margin-top: -2rem;
+    font-size: 0.8rem;
+    padding-right: 9px;
+    margin-top: -49px;
+}
+    dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: -3rem;
+    }
 
 @media (min-width: 576px) { ... }
 
 @media (min-width: 768px) {
+  
 .justify-content-md-center {
-    margin-top: 4%;
+    margin-top: 0%
     -ms-flex-pack: center!important;
     justify-content: center!important;
+    padding-top: 5%;
 }
 
 
@@ -77,6 +81,23 @@ body {
     border: 0px solid transparent; */
     border-radius: .25rem;
 }
+.jumbotron {
+    height: 417px;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #000;
+    border-radius: .3rem;
+    margin-top: 3%;
+}
 .card-img-persona h2 {
     margin-left: 43%;
     color: #F23580;
@@ -85,9 +106,7 @@ body {
     padding: 2%;
     text-align: center;
 }
-.h3, h3 {
-   color: #00BFF0; text-align: left; font-size: 1.4rem;
-}
+
  img.card-img-top{
     border-radius: 10px;
  
@@ -126,14 +145,7 @@ body {
         box-shadow: -1px 1px 14px 0px #00BFF0;
     
 }
-.col-md-10 {
-    border-radius: 25px;
-    box-shadow: -1px 1px 14px 0px #00BFF0;
-    background-color: black;
-    color: #FFF;
-    text-align: left;
-    max-width: 80%;
-}
+
       .col-md-6 {
         background-color: #000;
         color: #FFF;
@@ -240,67 +252,160 @@ body {
 .image-container::-webkit-scrollbar-track {
     background-color: #000; /* Set the color of the track (the non-draggable part of the scrollbar) */
 }
+.col-md-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 98.333333%;
+}
 
-.card-body{
-    color: white;
-    margin-top: 0;
-   margin-left: -28px;
-    margin-bottom: 2rem;
+.row{ 
+    color: #FFF;
+       
+        background-color: transparent;
+        
+        padding-bottom: 4%;
+        padding-bottom: 4%;
+       
+        justify-content: center;
+        padding-top: 20px;
     
 }
-.card-body-admin h2{
-   
-        color: #F23580;
-        margin-top: -104%;
-        font-size: 2rem;
-        padding: 2%;
-        text-align: center;
-   
-}
+.row-3 { color: #FFF;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #000;
+    padding-bottom: 4%;
+    padding-bottom: 4%;
+   border-radius: 25px;
+    justify-content: center;
+    padding-top: 20px;
+
+} 
+
 .card-body-admin {
-    color: white;
-  
-    margin-left: 246px;
-   
+background-color: black;
+color: white;
+border-radius: 25px;
+padding: 20px;
+box-shadow: -1px 1px 14px 0px #00BFF0;
+margin-top: 40px;
 }
+.card-body-map {
+    background-color: black;
+color: white;
+border-radius: 25px;
+padding: 20px;
+box-shadow: -1px 1px 14px 0px #00BFF0;
+margin-top: 40px;
+
+}
+.card-body-map-title {color: #00BFF0;
+    text-align: center;
+font-size: 2rem;
+}
+.card-body-map img {
+    width: 59%;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    margin-left: 20%;
+    justify-content: center;
+    margin-right: 20%;
+}
+.card-body-map-text {
+  
+        margin-left: -976px;
+        text-align: left;
+        padding: 1%;
+        font-size: 1.1rem;
+    }
+
+    .card-body-persona {
+        margin-right: 5%;
+        margin-left: 2%;
+        /* width: 73%; */
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        padding: 39px;
+        box-shadow: -1px 1px 14px 0px #00BFF0;
+        margin-top: 40px;
+    }
+    .card-body-persona title{
+      
+          font-size: 2rem;
+            text-align: right;
+        
+    }
+    .card-img-persona img {
+        margin-top: -50px;
+        border-radius: -97px;
+        width: 419px;
+        margin-left: -80px;
+        margin-top: -108px;
+        margin-left: -103px;
+        clip: rect(120px,506px,798px,95px);
+        position: absolute;
+    }
+    .card-body-persona-title {
+        font-size: 2rem;
+        color: #00BFF0;
+    }
+
+.col-md-10-title p {
+    margin-top: 5px;
+    margin-left: 63%;
+    font-size: 1.1rem;
+}
+.card-body-admin p {
+   
+    padding-left: 54%;
+    margin-left: 10%;
+    font-size: 1.1rem;
+}
+.card-body-admin img {
+    margin-top: -24px;
+    position: absolute;
+    clip: rect(58px,441px,644px,95px);
+    margin-left: -73px;
+}
+
+   
+
 
  
    
     
-    .card-body-admin p2 {
-        margin-top: 20%;
+   
+ .h2, h2 {
+        font-size: 2.3rem;  padding-top: 40px;  
+    color: #F23580;
+text-align: center;}
+    .h3, h3 {
+       
+        
+        color: #00BFF0;
+        /* text-align: left; */
+        font-size: 2rem;
+      
     }
     
-    .card-img-fluid-admin h2 {
-        margin-left: -60%;
-        margin-top: -30%;
+    .h4, h4 {
+        margin-left: 63%;
+        margin-top: 4%;
+        font-size: 2rem;
+        color: #00BFF0;
+        margin-bottom: 2%;
     }
-    .card-img-fluid-admin h3  {
-        margin-left: -54%;
-    }
-
-   
-        .h4, h4 {
-          
-            margin-left: 26%;
-           margin-top: -90%;
-            font-size: 1.4rem;
-            color: #00BFF0;
-            margin-bottom: 2%;
-        }
         
         .h5,h5 {
-            margin-left: 26%;
-            color: #00BFF0; font-size: 1.4rem;
+            margin-left: 63%;
+            color: #00BFF0; font-size: 2rem;
         }
 
      
-        .col-md-10-admin {
-            height: 775px;
-        }
     
         .col-md-10-persona {
-            width: 80%;
+            
             margin-top: -2%;
         }
         .card-img-fluid-admin {
@@ -329,7 +434,6 @@ body {
     color: #FFF;
     text-align: left;
  
-    width: 80%;
 }
 .card-body-admin p.card-text {
     width: 38%;
@@ -341,12 +445,6 @@ body {
 }
 
 
-.justify-content-md-center {
-    margin-top: 0%;
-    padding-top: 5%;
-    -ms-flex-pack: center!important;
-    justify-content: center!important;
-}
 .card-img-fluid {
     margin-left: -178%;
     margin-top: 115%;
@@ -357,13 +455,7 @@ body {
     margin-top: 4%;
     border-radius: 16px;
 }
-.card-img-persona img {
-    border-radius: 16px;
-    width: 334px;
-    margin-left: -80px;
-    margin-top: 3%;
-    margin-left: 29px;
-}
+
 .card-img-persona p {
  
         color: white;
@@ -393,6 +485,13 @@ body {
 
 
 @media screen and (min-width: 1024px) {
+    body {
+        background-image: url('./images/pinkrain.jpg');
+        background-size: cover; /* Adjust as needed */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Optional - makes the background fixed */
+        /* Additional background properties can be added here */
+    }
     
     #leftsidebar {width: 200px; float: left;}
     #main {;}
@@ -436,7 +535,7 @@ body {
         .column-content {
             width: 100%;}
             
-            .card-body-admin {
+             {
                 color: white;
                 margin-top: 0;
               
@@ -492,8 +591,6 @@ body {
             .card-body-admin {
                 color: white;
                 margin-top: 0;
-                /* margin-bottom: -7rem; */
-                margin-top: 67%;
             }
         
             .card-img-fluid-admin h3 {
@@ -507,8 +604,7 @@ body {
         background-color: black;
         color: #FFF;
         text-align: left;
-        max-width: 76%;
-        margin-top: ;
+       
     }
     .card-img-persona h2 {
       
@@ -528,24 +624,10 @@ body {
         margin-right: 3%;
         width: 38%;
     }
-.card-body-persona {    
-                margin-top: 0%;
-            margin-left: -1%;
-            width: 100%;
-        }
+
    
 
-.row {
-    margin-right: 2%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    /* margin-left: 4%; */
-    border-radius: 25px;
-    padding: 4%;
-    margin-left: 2%;
-}
+
        
     .p {
         margin: 2%;
@@ -556,19 +638,7 @@ body {
       
 
        }
-       .card-body-mock {
-        padding: 3%;
-        margin-bottom: 8%;
-        margin-left: -8%;
-        margin-top: -15%;
-        width: 80%;
-        background-color: black;
-        color: #FFF;
-        text-align: left;
-        width: 109%;
-        border-radius: 25px;
-        box-shadow: -1px 1px 14px 0px #00BFF0;
-    }
+     
     .card-img-persona img {
         width: 50%;
         border-radius: 16px;
@@ -585,7 +655,7 @@ body {
         color: #FFF;
         text-align: left;
         padding-top: 2%;
-        width: 80%;
+      
     }
 
 
@@ -680,22 +750,16 @@ body {
 
 
     
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1280px max-width:1920px ) {
    
  
-    .col-md-5 {
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 34.666667%;
-        margin-right: 2%;
-    }
-  
+
 .grid-container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20%;
   }
-}
+
 
 body {
     background-image: url('./images/pinkrain.jpg');
@@ -725,18 +789,47 @@ body {
     
    
 }
-.h2, h2 {
-    color: #F23580;
-    margin-top: 4%;
-    font-size: 2rem;
-    padding: 2%;
-   text-align: center;
+.card-body-admin 
+ {
+        width: 68%;
+        margin-left: 30%;
+    }
+
+
+.card-img-fluid-admin img {
+    margin-left: -199px;
+    margin-top: -5%;
+    border-radius: 25px;
+    max-width: 513px;
 }
 
-.col-sm-6.col-md-8 {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 1.2rem;
-   
-    
+.card-img-fluid-admin h3 {
+    margin-left: -30%;
 }
+
+.card-body-admin h2 {
+    color: #F23580;
+    margin-left: -58%;
+    margin-top: -101%;
+    font-size: 3rem;
+    padding: 2%;
+    text-align: center;
+}
+.card-img-fluid-admin p {
+    margin-left: -29%;
+    font-size: 1.4rem;
+    /* padding-bottom: 8%; */
+}
+.h4, h4 {
+    margin-left: 30%;
+    margin-top: -50%;
+    font-size: 2.4rem;
+    color: #00BFF0;
+    margin-bottom: 2%;
+}
+
+.h5,h5 {
+    margin-left: 30%;
+    color: #00BFF0; font-size: 2.4rem;
+}
+  }
