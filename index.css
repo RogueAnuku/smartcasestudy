@@ -44,7 +44,25 @@ body {
         margin-top: 0;
         margin-bottom: -3rem;
     }
-
+    #footer-nav ul li {
+        list-style: none; /* Remove the list markers (dots) */
+    }
+    a {
+        color: #f23580;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    a:hover {
+        color: #00BFF0;
+        text-decoration: underline;
+    }
+    #footer-image {
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+    }
+    
+    #footer-image:hover {
+        transform: scale(1.2); /* Zoom in by 20% on hover */
+    }
 @media (min-width: 576px) { ... }
 
 @media (min-width: 768px) {
