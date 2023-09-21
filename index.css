@@ -785,6 +785,14 @@ text-align: center;}
             margin-left: 10%;
             font-size: 1.1rem;
         }
+        .back-arrow img {
+           
+                margin-left: 20px;
+                width: 64px;
+                margin-top: -910px;
+            
+            
+        }
 }
   @media screen and (min-width: 1280px max-width:1920px ) {
    
@@ -876,7 +884,13 @@ body {
 }
 
 #footer-nav {
-    font-size: 1.3rem;
+    font-size: 1.3rem; position:absolute;
+    z-index: 2;
+}
+#footer-image {
+    position: absolute;
+    z-index: 1; /* Lower z-index to place the image behind the navigation */
+    /* Add any other styling you want for the image here */
 }
 dl, ol, ul {
     margin-top: 0;
